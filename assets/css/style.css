@@ -29,9 +29,19 @@ input {
     box-shadow: 10px 2px 4px black;
 }
 
+#value input:nth-child(1) {
+    border-top-left-radius: 10px;
+}
+
+#value input:nth-child(2) {
+    border-top-right-radius: 10px;
+}
+
 #result-box input#result {
     width: 74vw;
     max-width: 592px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 button {
