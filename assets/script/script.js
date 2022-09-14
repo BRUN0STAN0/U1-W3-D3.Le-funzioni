@@ -53,3 +53,25 @@ console.log(1 + 2 || 1) // 3
 
 
 //! ESERCIZIO EXTRA -
+
+function sum(x, y) {
+    x = Number(document.getElementById("x").value);
+    y = Number(document.getElementById("y").value);
+    result = document.getElementById("result").value = (x + y);
+}
+function subtraction(x, y) {
+    x = Number(document.getElementById("x").value);
+    y = Number(document.getElementById("y").value);
+    result = document.getElementById("result").value = (x - y);
+}
+function divide(x, y) {
+
+    x = Number(document.getElementById("x").value);
+    y = Number(document.getElementById("y").value);
+    result = document.getElementById("result").value = (x / y);
+}
+function multiply(x, y) {
+    x = Number(document.getElementById("x").value);
+    y = Number(document.getElementById("y").value);
+    result = document.getElementById("result").value = (x * y);
+}

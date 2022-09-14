@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>U1-W3-D4.Le-funzioni</title>
 </head>
 <body>
-    
+    <div id="container">
+        <h1>MINIMALIST CALCULATOR</h1>
+        <div id="value">
+            <input id="x" type="text" placeholder="0">
+            <input id="y" type="text" placeholder="0">
+        </div>
+        <div id="calculator">
+            <button id="sum" onclick="sum()">+</button>
+            <button id="subtraction" onclick="subtraction()">-</button>
+            <button id="divide" onclick="divide()">/</button>
+            <button id="multiply" onclick="multiply()">x</button>
+        </div>
+        <div id="result-box">
+            <input type="text" id="result" placeholder="result">
+        </div>
+    </div>
     <script src="./assets/script/script.js"></script>
 </body>
 </html>

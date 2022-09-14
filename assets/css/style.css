@@ -1,0 +1,50 @@
+body {
+    font-family: monospace;
+    overflow: hidden;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(100deg, rgb(159, 222, 167), rgb(107, 191, 227));
+}
+
+#calculator {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+input {
+    width: 36vw;
+    max-width: 288px;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    box-shadow: 10px 2px 4px black;
+}
+
+#result-box input#result {
+    width: 74vw;
+    max-width: 592px;
+}
+
+button {
+    max-width: 300px;
+    max-height: 300px;
+    width: 50%;
+    height: 40vw;
+    font-size: 150px;
+    border: 6px solid rgb(44, 44, 44);
+    box-shadow: 10px 0px 4px black;
+
+}
+
+button:active {
+    background-color: gray;
+}
