@@ -52,11 +52,15 @@ button {
     width: 50%;
     height: 40vw;
     font-size: 150px;
+    color: gray;
     border: 6px solid rgb(44, 44, 44);
     box-shadow: 10px 0px 4px black;
 
 }
 
 button:hover {
+    color: black;
+    font-size: 100px;
     background-color: gray;
+    transition: .5s;
 }

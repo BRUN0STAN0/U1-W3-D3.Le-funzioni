@@ -33,6 +33,7 @@ function Calculator() {
 }
 
 Calculator = Calculator();
+
 console.log(Calculator.subtraction(1, 2)) // -1
 console.log(Calculator.sum(1, 2)) // 3
 console.log(Calculator.divide(1, 2)) // 0.5
@@ -54,24 +55,33 @@ console.log(1 + 2 || 1) // 3
 
 //! ESERCIZIO EXTRA -
 
-function sum(x, y) {
-    x = Number(document.getElementById("x").value);
-    y = Number(document.getElementById("y").value);
-    result = document.getElementById("result").value = (x + y);
+function takeNumberFromInput(id) {
+    return Number(document.getElementById(id).value);
 }
+
+function printNumberIntoInput(id, valore) {
+    document.getElementById(id).value = valore;
+}
+
+function sum(x, y) {
+    x = takeNumberFromInput('x');
+    y = takeNumberFromInput('y');
+    printNumberIntoInput("result", x + y);
+}
+
 function subtraction(x, y) {
-    x = Number(document.getElementById("x").value);
-    y = Number(document.getElementById("y").value);
-    result = document.getElementById("result").value = (x - y);
+    x = takeNumberFromInput('x');
+    y = takeNumberFromInput('y');
+    printNumberIntoInput("result", x - y);
 }
 function divide(x, y) {
 
-    x = Number(document.getElementById("x").value);
-    y = Number(document.getElementById("y").value);
-    result = document.getElementById("result").value = (x / y);
+    x = takeNumberFromInput('x');
+    y = takeNumberFromInput('y');
+    printNumberIntoInput("result", x / y);
 }
 function multiply(x, y) {
-    x = Number(document.getElementById("x").value);
-    y = Number(document.getElementById("y").value);
-    result = document.getElementById("result").value = (x * y);
+    x = takeNumberFromInput('x');
+    y = takeNumberFromInput('y');
+    printNumberIntoInput("result", x * y);
 }
