@@ -39,6 +39,8 @@ input {
 
 #result-box input#result {
     width: 74vw;
+    height: 80px;
+    font-size: 50px;
     max-width: 592px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -55,6 +57,6 @@ button {
 
 }
 
-button:active {
+button:hover {
     background-color: gray;
 }
